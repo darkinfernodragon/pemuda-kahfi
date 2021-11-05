@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+			<resources>
+
+			    <string name="server">https://www.atommobile.net/</string>
+
+			    <string name="app_name">Pemuda Kahfi</string>
+			    <string name="app_path">applications/</string>
+			    <string name="app_id_user">4</string>
+			    <string name="app_id">5</string>
+			    <string name="app_jenis">profile</string>
+
+			    <string name="api_path">api/jsonv2/</string>
+			    <string name="api_key">rahasia</string>
+
+			    <string name="background">pattern</string>
+
+			    <string name="header_title">Pemuda Kahfi</string>
+			    <string name="footer_copyright">Copyright Pemuda Kahfi | Powered By CyberLabs</string>
+			    <string name="footer_powered">Powered by Cyberlabs</string>
+
+			    <string-array name="menu_id">
+			        <item>25</item><item>26</item><item>27</item><item>28</item><item>29</item><item>30</item>
+			    </string-array>
+
+			    <string-array name="menu_caption">
+			        <item>News</item><item>Gallery</item><item>Video</item><item>Profile</item><item>Location</item><item>Contact</item>
+			    </string-array>
+
+			    <string-array name="menu_page">
+			        <item>hal-berita</item><item>hal-album</item><item>hal-video</item><item>hal-text</item><item>hal-lokasi</item><item>hal-kontak</item>
+			    </string-array>
+
+			    <array name="menu_image">
+			        <item>@drawable/hal_berita25</item><item>@drawable/hal_album26</item><item>@drawable/hal_video27</item><item>@drawable/hal_text28</item><item>@drawable/hal_lokasi29</item><item>@drawable/hal_kontak30</item>
+			    </array>
+
+			    <color name="ColorPrimary">#3dc66e</color>
+			    <color name="ColorPrimaryDark">#DD3dc66e</color>
+
+			    <color name="ColorFont">#000000</color> <!-- Color Font Body -->
+			    <color name="ColorBackground">#FFF</color> <!-- Background -->
+
+			    <color name="ColorBackgroundArea">#ffffff</color>
+			    <color name="ColorFontBar">#ffffff</color>
+			    <color name="ColorFontMenu">#000</color>
+
+			</resources>

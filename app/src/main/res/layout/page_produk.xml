@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="net.atommobile.pemudakahfi.produk.ProdukModel"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_produk">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView6">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/slide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        android:padding="10dip"
+                        app:centered="true"
+                        app:fillColor="@android:color/white"
+                        app:pageColor="#79ffffff"
+                        app:snap="false"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorBackgroundArea"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_cari"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:hint="Search"
+                        android:background="@color/ColorBackgroundArea"
+                        android:textColor="@color/ColorFont"
+                        android:textColorHint="#b7b7b7"
+                        android:textSize="16dp"
+                        android:maxLines="1"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/btn_cari"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/cari"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_choice"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorBackgroundArea"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/filter"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="1"
+                        android:onClick=""
+                        tools:ignore="OnClick">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/filter" />
+
+                        <TextView
+                            android:layout_marginLeft="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kategori"
+                            android:textSize="16dp"
+                            android:id="@+id/txt_kategori"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sort"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="1"
+                        android:onClick=""
+                        tools:ignore="OnClick">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/sort"/>
+
+                        <TextView
+                            android:layout_marginLeft="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terbaru"
+                            android:textSize="16dp"
+                            android:id="@+id/txt_urutan"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <net.atommobile.pemudakahfi.ext.AdaptGridView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_item"
+                        android:layout_gravity="center_horizontal"
+                        android:numColumns="auto_fit"
+                        android:horizontalSpacing="8dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

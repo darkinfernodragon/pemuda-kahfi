@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pemudakahfi.iml" filepath="$PROJECT_DIR$/.idea/modules/pemudakahfi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/pemudakahfi.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/pemudakahfi.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/viewpagerindicator/pemudakahfi.viewpagerindicator.iml" filepath="$PROJECT_DIR$/.idea/modules/viewpagerindicator/pemudakahfi.viewpagerindicator.iml" />
+    </modules>
+  </component>
+</project>

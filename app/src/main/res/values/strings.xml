@@ -1,0 +1,8 @@
+<resources>
+
+<!--    <string name="google_api_key">AIzaSyBMePR50nurqFI5SVft3VMCJF5jDjkul-E</string>-->
+
+    <string name="map_api_key">AIzaSyDbivW9Z-mlhYq7O7BuhPplOGD0PtXsJQM</string>
+
+    <string name="youtube_api_key">AIzaSyBaWrqikEiwSDbs99MhQRKsSlI0aQV39JE</string>
+</resources>

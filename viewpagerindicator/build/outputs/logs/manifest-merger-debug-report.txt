@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:3:1-7:12
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:3:1-7:12
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:3:1-7:12
+	package
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:6:5-32
+	xmlns:android
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml:5:5-29
+uses-sdk
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+		ADDED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml
+		INJECTED from E:\Downloads\pemudakahfi\viewpagerindicator\src\main\AndroidManifest.xml

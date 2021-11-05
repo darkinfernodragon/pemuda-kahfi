@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_menu"
+    android:background="@drawable/bg_pattern">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_menu"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/img_logo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp" />
+
+            <net.atommobile.pemudakahfi.ext.AdaptGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_menu"
+                android:layout_gravity="center_horizontal"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="8dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                class="net.atommobile.pemudakahfi.ext.AdaptGridView"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

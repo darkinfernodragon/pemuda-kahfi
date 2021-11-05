@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="net.atommobile.pemudakahfi.produk.ProdukItemModel"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorBackgroundArea">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layout_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/slide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        items="@{model.images}"
+                        indicator="@{model.indicator}"
+                        fragment="@{model.fragment}"/>
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        android:padding="10dip"
+                        app:centered="true"
+                        app:fillColor="@android:color/white"
+                        app:pageColor="#79ffffff"
+                        app:snap="false"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_contain"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nama_barang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{model.title}"
+                            android:textColor="@color/ColorFont"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_harga_baru"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp. "
+                                android:textColor="@color/ColorFont"
+                                android:textSize="16dp"
+                                android:layout_gravity="top"/>
+
+                            <TextView
+                                android:id="@+id/harga_baru"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@{model.harga}"
+                                android:textColor="@color/ColorFont"
+                                android:textSize="16dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="top"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Ukuran"
+                            android:textColor="@color/ColorPrimary"
+                            android:textStyle="bold"
+                            android:id="@+id/textView62"
+                            android:layout_marginBottom="4dp"/>
+
+                        <Spinner
+                            style="@style/EditText"
+                            android:spinnerMode="dialog"
+                            android:id="@+id/spin_ukuran"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"/>
+                            
+                            
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stok Barang"
+                            android:textColor="@color/ColorPrimary"
+                            android:textStyle="bold"
+                            android:id="@+id/textView82"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="12dp"
+                            android:text="-"
+                            android:textColor="@color/ColorFont"
+                            android:id="@+id/textView81"
+                            android:layout_marginBottom="4dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Deskripsi Produk"
+                            android:textColor="@color/ColorPrimary"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="4dp"/>
+
+                        <WebView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/web_container" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_dot"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_choice"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BELI SEKARANG"
+                android:id="@+id/btn_beli"
+                style="@style/ButtonBottomStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

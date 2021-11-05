@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_keranjang"
+        android:actionLayout="@layout/badge"
+        android:title="Keranjang"
+        android:icon="@drawable/cart"
+        app:showAsAction="always" />
+</menu>

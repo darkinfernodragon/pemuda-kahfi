@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="model"
+            type="net.atommobile.pemudakahfi.transaksi.keranjang.KeranjangItemModel"/>
+
+        <variable
+            name="event"
+            type="net.atommobile.pemudakahfi.transaksi.keranjang.KeranjangItemEvent"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_barang"
+                android:src="@mipmap/ic_launcher"
+                imageURL="@{model.gambar}"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@{model.nama}"
+                    android:id="@+id/txt_nama"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@{model.ukuran}"
+                    android:id="@+id/txt_ukuran"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@{model.harga}"
+                    android:id="@+id/txt_harga"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton2"
+                        android:src="@drawable/remove"
+                        android:onClick="@{(theView) -> event.decreaseQty(theView, model)}"
+                        android:background="@color/ColorBackground"/>
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_qty"
+                        android:text="@{model.qty}"
+                        android:gravity="right"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        style="@style/EditText" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton3"
+                        android:src="@drawable/add"
+                        android:onClick="@{(theView) -> event.increaseQty(theView, model)}"
+                        android:background="@color/ColorBackground"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/delete"
+                android:background="#00FFFFFF"
+                android:onClick="@{(theView) -> event.deleteItem(theView, model)}" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

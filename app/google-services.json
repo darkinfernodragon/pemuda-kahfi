@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "76449030459",
+    "project_id": "atommobile-b9823",
+    "storage_bucket": "atommobile-b9823.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76449030459:android:af0ee185d9874996e2d71e",
+        "android_client_info": {
+          "package_name": "net.atommobile.pemudakahfi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76449030459-1q7oscnlh775skor3b0e36fdoq31947q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmzbjvtPr9q874HUnk070YljwYY3ONR5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76449030459-1q7oscnlh775skor3b0e36fdoq31947q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
